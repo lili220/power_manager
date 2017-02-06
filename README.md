@@ -1,1 +1,1 @@
-# power_manager
+# power_manager是根据win7的电源管理特征使用为linux编写的电源管理工具，用于cinnamon桌面环境下，主要是通过gconf维持一个用户设置的‘平衡模式’、‘节能模式’或‘高性能模式’的配置信息，并及时将配置项同步到系统使用的gsettings相应的配置项下，通过桌面守护进程cinnamon-settings-daemon程序真正生效，同时，本程序也在监控着gsettings的电源管理配置项的变化，并及时将其变化反向同步到自己维护的gconf配置中。本程序的gconf配置路径是/apps/power_manager，可以使用gconf-editor工具查看。
